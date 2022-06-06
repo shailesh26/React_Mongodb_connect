@@ -8,12 +8,17 @@ const FriendSchema = new mongoose.Schema({
    age:{
        type:Number,
        required:true
-   },
-   discription:{
+   }, 
+   mobile:{
+    type:Number,
+    required:true
+},
+   address:{
        type:String,
-       required:false
-   }
-})
+       required:true
+   },
+},
+{ timestamps: true })
 
 const FriedModel = mongoose.model("Friends",FriendSchema)
 
