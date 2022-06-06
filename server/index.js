@@ -12,7 +12,7 @@ const mongoose = require('mongoose')
 
 
 
-mongoose.connect("mongodb+srv://manu:Welcome123@cluster0.y43xm.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,})
+mongoose.connect("mongodb+srv://manu:<Password>@cluster0.y43xm.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,})
 
 app.post('/addUser', async (req,resp)=>{
 
